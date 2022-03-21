@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 
-import { Box, Container, Heading, Paragraph, Button, Image } from "theme-ui";
+import { Box, Container, Heading, Paragraph, Button, Image, Link } from "theme-ui";
 
 export default function Banner() {
   return (
@@ -11,10 +11,14 @@ export default function Banner() {
             MEET YOUR TRANSPORTATION NEEDS WITH MD!
           </Heading>
           <Paragraph>
-            MD Transportation, Inc. maintains a rigorous level of safety, responsibility, and dependability. Our company&#39;s founder and drivers have years of experience in providing high quality public transportation. You can rely on our wealth of knowledge and experience to provide excellent transportation services.
+            MD Transportation, Inc. maintains a rigorous level of safety, responsibility, and dependability. Our
+            company&#39;s founder and drivers have years of experience in providing high quality public transportation.
+            You can rely on our wealth of knowledge and experience to provide excellent transportation services.
           </Paragraph>
           <p className="mt-8 md:mt-12">
-            <Button variant="primary">Request A Bus</Button>
+            <Link href="/services#form">
+              <Button variant="primary">Request A Bus</Button>
+            </Link>
           </p>
         </Box>
         <Box sx={styles.banner.imageBox}>
@@ -81,7 +85,7 @@ const styles = {
     imageBox: {
       "@media screen and (min-width: 600px)": {
         width: "30%",
-        m: "auto"
+        m: "auto",
       },
       m: "auto",
       width: "100",

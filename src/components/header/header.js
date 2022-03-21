@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 
-import { Box, Button, Container, Flex, NavLink } from "theme-ui";
+import { Box, Button, Container, Flex, Link, NavLink } from "theme-ui";
 import { useRouter } from "next/router";
 import menuItems from "./header.data";
 import Logo from "components/logo";
@@ -26,9 +26,11 @@ export default function Header({ className }) {
           ))}
         </Flex>
         <Box sx={styles.container}>
-          <Button className="donate_btn" variant="secondary" aria-label="Get a Quote">
-            Get a Quote
-          </Button>
+          <Link href="/services#form">
+            <Button className="donate_btn" variant="secondary" aria-label="Get a Quote">
+              Get a Quote
+            </Button>
+          </Link>
           <MobileDrawer />
         </Box>
       </Container>
