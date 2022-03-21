@@ -11,7 +11,7 @@ export default function Banner() {
             MEET YOUR TRANSPORTATION NEEDS WITH MD!
           </Heading>
           <Paragraph>
-            MD Transportation, Inc. maintains a rigorous level of safety, responsibility, and dependability. Our
+            MD Transportation, LLC maintains a rigorous level of safety, responsibility, and dependability. Our
             company&#39;s founder and drivers have years of experience in providing high quality public transportation.
             You can rely on our wealth of knowledge and experience to provide excellent transportation services.
           </Paragraph>

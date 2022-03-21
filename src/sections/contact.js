@@ -11,7 +11,7 @@ export default function Contact() {
             Contact <span sx={{ color: "primary" }}> Us</span>
           </Heading>
           <Paragraph>
-            Thank you for visiting MD Transportation, Inc.! We look forward to servicing your transportation needs. Call
+            Thank you for visiting MD Transportation, LLC! We look forward to servicing your transportation needs. Call
             us today!
           </Paragraph>
         </Box>
@@ -20,7 +20,7 @@ export default function Contact() {
             <Heading as={"h1"} variant="title">
               Call Now
             </Heading>
-              <div>(612) 203-2702</div>
+            <div>(612) 203-2702</div>
           </Box>
           <Box sx={styles.contact.group}>
             <Heading as={"h1"} variant="title">
@@ -114,7 +114,7 @@ const styles = {
       "@media screen and (max-width: 700px)": {
         flexDirection: "column",
         justifyContent: "flex-start",
-      alignItems: "center",
+        alignItems: "center",
       },
       justifyContent: "space-evenly",
       alignItems: "flex-start",
@@ -128,7 +128,7 @@ const styles = {
       width: "190px",
       "@media screen and (max-width: 700px)": {
         alignItems: "flex-start",
-        mb: "20px"
+        mb: "20px",
       },
     },
   },

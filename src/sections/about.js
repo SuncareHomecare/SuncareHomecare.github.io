@@ -17,7 +17,7 @@ export default function AboutSection() {
             The Owner
           </Heading>
           <Paragraph sx={styles.about.segmentBody}>
-            Prior to MD Transportation, Inc., our owner, Mr. Mumed drove school buses for Minneapolis Public Schools for
+            Prior to MD Transportation, LLC, our owner, Mr. Mumed drove school buses for Minneapolis Public Schools for
             15 years before founding his own transportation company. His extensive experience behind the wheel gives him
             a valued perspective in ensuring that drivers are punctual and professional.
           </Paragraph>
@@ -101,7 +101,7 @@ const styles = {
       borderRadius: "10px",
     },
 
-    segmentHeader: {mb: "20px"},
+    segmentHeader: { mb: "20px" },
     segmentBody: { textAlign: "center" },
   },
 };

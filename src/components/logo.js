@@ -7,7 +7,7 @@ export default function Logo({ src, ...rest }) {
   return (
     <Link href="/" sx={styles.logo} {...rest}>
       <Image src={src} alt="logo" />
-      <strong>MD Transportation Inc.</strong>
+      <strong>MD Transportation LLC</strong>
     </Link>
   );
 }
