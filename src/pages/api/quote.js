@@ -13,14 +13,11 @@ export default async function submitRequestForm(req, res) {
       pass: PASSWORD,
     },
     secure: true,
-    dkim: {
-      domainName: "gmail.com",
-    },
   });
 
   const mailData = {
     from: `Request a Quote: Form Submission <${EMAIL_ADDRESS}>`,
-    to: "jebdi12@gmail.com",
+    to: "mdtransportation037@gmail.com",
     subject: `${req.body.vehicleType} for ${req.body.name}`,
     text: req.body.plainText,
     html: req.body.htmlText,
