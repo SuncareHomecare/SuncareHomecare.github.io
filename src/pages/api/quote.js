@@ -3,7 +3,7 @@ require("dotenv").config();
 const EMAIL_ADDRESS = process.env.SENDER_EMAIL_ADDRESS;
 const PASSWORD = process.env.SENDER_EMAIL_PASSWORD;
 
-export default async function submitRequestForm(req, res) {
+export default async function handler(req, res) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
     port: 465,

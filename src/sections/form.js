@@ -54,7 +54,6 @@ export default function Form() {
   const { errors } = formState;
   const [loading, setLoading] = useState(false);
 
-  // TODO: Handle Form Submission
   function onSubmit(payload) {
     const id = toast.loading("Submitting Form...");
     setLoading(true);
@@ -83,7 +82,7 @@ export default function Form() {
     };
 
     fetch("/api/quote", {
-      method: "POST",
+      method: "GET",
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
@@ -94,9 +93,13 @@ export default function Form() {
       if (res.status === 200) {
         toast.update(id, { render: "Success: Form Submitted!", type: "success", isLoading: false, autoClose: 4000 });
         reset(defaultFormValues);
-      }
-      if (res.status === 500) {
-        toast.update(id, { render: "Error: Try again or Contact Us: ", type: "error", isLoading: false, autoClose: 8000 });
+      } else {
+        toast.update(id, {
+          render: "Error: Try again or Contact Us: ",
+          type: "error",
+          isLoading: false,
+          autoClose: 8000,
+        });
       }
     });
   }
