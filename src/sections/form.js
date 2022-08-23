@@ -82,7 +82,7 @@ export default function Form() {
     };
 
     fetch("/api/quote", {
-      method: "GET",
+      method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
