@@ -109,8 +109,11 @@ export default function Form() {
       <Container>
         <Box sx={styles.form.headerBox}>
           <Heading as={"h1"} variant="heroPrimary" sx={styles.form.header}>
-            Request A <span sx={{ color: "primary" }}> Vehicle</span>
+            Request A <span sx={{ color: "primary" }}> Bus</span>
           </Heading>
+          <p className="mb-0 text-muted lh-lg">
+            Please fill out the following form to request a bus for your Public, Private, Charter or Academy School
+          </p>
         </Box>
         <form onSubmit={handleSubmit(onSubmit)}>
           <label className="form-label">Contact Information: </label>
