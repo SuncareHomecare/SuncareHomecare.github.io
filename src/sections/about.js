@@ -8,39 +8,52 @@ export default function AboutSection() {
       <Box sx={styles.about.container}>
         <Box sx={styles.about.headerBox}>
           <Heading as={"h1"} variant="heroPrimary" sx={styles.about.header}>
-            We Are <span sx={{ color: "primary" }}> MD</span>
+            <span sx={{ color: "primary" }}> Suncare Homecare</span>
           </Heading>
-          <Paragraph>Providing you with safe, reliable, and punctional transportation.</Paragraph>
+          <Paragraph>Providing you with exceptional, reliable, and compassionate care.</Paragraph>
         </Box>
         <Box sx={styles.about.segmentBoxDark}>
           <Heading as={"h3"} variant="title" sx={styles.about.segmentHeader}>
-            The Owner
+            Our Mission
           </Heading>
           <Paragraph sx={styles.about.segmentBody}>
-            Prior to MD Transportation, LLC, our owner, Mr. Mumed drove school buses for Minneapolis Public Schools for
-            15 years before founding his own transportation company. His extensive experience behind the wheel gives him
-            a valued perspective in ensuring that drivers are punctual and professional.
+            Suncare Homecare is a licensed provider of home and community-based services.
+            Our mission is to empower individuals to maintain their independence
+            and enhance their quality of life through compassionate and reliable
+            care in the comfort of their own homes.
+         </Paragraph>
+        </Box>
+        <Box sx={styles.about.segmentBoxLight}>
+          <Heading as={"h3"} variant="title" sx={styles.about.segmentHeader}>
+            Our Values
+          </Heading>
+          <Paragraph sx={styles.about.segmentBody}>
+            We believe that everyone deserves to live a life of dignity and respect,
+            regardless of their physical or mental abilities. That's why we're 
+            dedicated to providing exceptional care to our clients, helping them
+            to achieve their goals and live life to the fullest.
+          </Paragraph>
+        </Box>
+        <Box sx={styles.about.segmentBoxDark}>
+          <Heading as={"h3"} variant="title" sx={styles.about.segmentHeader}>
+            Our Team
+          </Heading>
+          <Paragraph sx={styles.about.segmentBody}>
+            Our experienced and highly trained care provider is committed 
+            to providing the highest quality of care, tailored to meet the unique
+            needs of each individual. Whether it's assistance with daily living
+            activities, companionship, or medical care, we're here to support our
+            clients and their families every step of the way.
           </Paragraph>
         </Box>
         <Box sx={styles.about.segmentBoxLight}>
           <Heading as={"h3"} variant="title" sx={styles.about.segmentHeader}>
-            The Director of Operations
+            Our Passion
           </Heading>
           <Paragraph sx={styles.about.segmentBody}>
-            MD’s director of operations, Waday Musse, started driving a school bus for First Student in 2007 and still
-            drives for MD. His focus is safety, having never had an accident.
-          </Paragraph>
-        </Box>
-        <Box sx={styles.about.segmentBoxDark}>
-          <Heading as={"h3"} variant="title" sx={styles.about.segmentHeader}>
-            Safety and Reliability
-          </Heading>
-          <Paragraph sx={styles.about.segmentBody}>
-            We know that drivers are the face of the school and that a successful day at school starts with a
-            problem-free bus ride. A well-trained and experienced driver can reliably produce safe rides while
-            addressing behavioral issues and driving conditions. We train our drivers to always provide safe and
-            efficient transportation services. Parents and teachers alike can expect timely pick-ups and dropoffs, day
-            in and day out.
+            At Suncare Homecare, we're passionate about making a difference in 
+            the lives of those we serve. If you're looking for a home care provider
+            that truly cares, look no further than Suncare Homecare.
           </Paragraph>
         </Box>
       </Box>
@@ -82,7 +95,7 @@ const styles = {
     },
     segmentBoxLight: {
       backgroundColor: "white",
-      width: "90%",
+      maxWidth: "700px",
       flexDirection: "column",
       display: "flex",
       justifyContent: "center",
@@ -92,7 +105,7 @@ const styles = {
     },
     segmentBoxDark: {
       backgroundColor: "#f9f9f9",
-      width: "90%",
+      maxWidth: "700px",
       flexDirection: "column",
       display: "flex",
       justifyContent: "center",
@@ -102,6 +115,6 @@ const styles = {
     },
 
     segmentHeader: { mb: "20px" },
-    segmentBody: { textAlign: "center" },
+    segmentBody: { textAlign: "left" },
   },
 };
